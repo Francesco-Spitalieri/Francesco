@@ -44,9 +44,7 @@
 
 
  /* esto esta reclacionado con el @font-face y tenes que instalar el tipo de letra*/
-body {
-    font-family: ;
-}
+
 /* para que por ej tenga scrol */
 /* .text_conteiner {
 background-color: aqua;
@@ -201,7 +199,7 @@ height: auto;
 } */
 
 .imagen_principal {
-    width 100%;
+    width: 100%;
     max-height: 200px;
 }
 
@@ -247,12 +245,12 @@ height: auto;
 
 /* media queris */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .navegacion_nav {
-        /* width: 70%; */
+        width: 70%;
         
     }
-}
+} */
 
 @media (max-width: 768px) {
     .navegacion label {
