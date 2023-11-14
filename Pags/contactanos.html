@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Contactanos</title>
+
+   
+
+</head>
+<body>
+
+    <nav class="navegacion">
+        <div class="contlogo">
+            <img src="/archivos/iconos/Captura de pantalla 2023-10-29 193709.png" alt="Logotipo Puente Blanco S.A" class="Logo">
+            <span class="letradelogo">Puente Blanco S.A</span>
+        </div>
+        <input type="checkbox" id="check_menu">
+        <ul class="navegacion_nav">
+            <li class="nav__item">
+                <a href="/index.html">
+                    <i class='bx bx-male-female'></i>
+                  Inicio
+                </a>
+              </li>
+            <li class="nav__item">
+                <a href="/Pags/mas_de_nosotros.html"> <i class='bx bx-male-female'></i> 
+                    Mas de nosotros
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/Pags/puntos_de_venta.html"> <i class='bx bxl-telegram'></i> 
+                    Puntos de ventas
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/Pags/ventas.html"> <i class='bx bxs-bar-chart-alt-2'></i> 
+                Ventas
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/Pags/contactanos.html"> <i class='bx bx-phone'></i> 
+                Contactanos
+               </a>
+            </li>
+        </ul>
+        <label for="check_menu"><i class="bx bx-menu"></i></label>
+    </nav>
+
+    <fieldset class="formulario">
+        <div class="Formulario_for">
+        <!--asi se escribiria para texto-->
+        <label for="nombre">Tu Nombre</label>
+        <input type="text" nombre required>
+        <!--asi se escribiria para mails-->
+        <label for="email">Tu email</label>
+        <input type="email" name="email" required="" placeholder="">
+        <!--como aca arriba -->
+        <!--para que aparesca las letras dentro de el rectangulo es con (placeholder=¨¨)-->
+        <!--para que sea requerido es requered=¨¨-->
+        <label for="text">Escribe tu consulta aqui</label>
+        <input type="textarea" name="text">
+    
+        <!-- envar folmulario -->
+        <input type="submit" value="Enviar">
+        <div>
+            <!-- limpiar formulario -->
+            <label for="reset">Toca para borrar todo</label>
+            <input type="reset" name="reset">
+
+            <select class="form-select form-select-lg" aria-label="Large select">
+                <option selected="">Selecciona el motivo de la consulta</option>
+                <option value="1">Productos </option>
+                <option value="2">Ubicaciones</option>
+                <option value="3">Stock</option>
+                <option value="3">Otro</option>
+              </select>
+        </div>
+    </fieldset>
+</div>
+
+
+<footer class="footer">
+    <ul class="info_de_footer">
+        <div>
+            <a class='bx bxl-instagram' href="https://www.instagram.com/puenteblancosa/" >Instagram</a>
+        </div>
+        <div>
+            <a class='bx bx-map' href="https://www.google.com.ar/maps/place/32%C2%B056'37.8%22S+68%C2%B043'12.3%22W/@-32.9438299,-68.7207207,239m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-32.943831!4d-68.720077!5m1!1e4?entry=ttu">Maps</a>
+        </div>
+        <div>
+            <a class='bx bx-phone' href="/Pags/contactanos.html">Contactanos</a>
+        </div>
+    </ul>
+</footer>
+
+
+    
+</body>
+</html>

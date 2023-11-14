@@ -1,0 +1,284 @@
+
+
+@font-face {
+    font-family: "hola";
+    src: url(../archivos/kg_primary_italics.zip);
+}
+
+/* el flex lo que sea se le pone al padre de todo */
+
+.contenedor-padre {
+    height: 550px;
+    background-color: #03CEA4;
+
+}
+
+.contenedor-hijo {
+    font-weight: 600;
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+
+
+.Nuestrahistoria1 {
+    background-image: url(/imagenes/canon/IMG_0414.JPG)
+}
+
+.Infodehistoria1 {
+    background-color: rgb(250, 250, 250);
+    padding: 10px 10px; 
+     height: 90%;
+}
+
+.infodehistoria2 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px; 
+    height: 90%;
+    
+}
+
+
+ /* esto esta reclacionado con el @font-face y tenes que instalar el tipo de letra*/
+body {
+    font-family: ;
+}
+/* para que por ej tenga scrol */
+/* .text_conteiner {
+background-color: aqua;
+width: 70%;
+height: 500px;
+overflow: auto;
+} */
+.text_conteiner {
+    background-color: rgb(204, 204, 204);
+}
+
+
+/* barra de navegacion */
+.navegacion {
+    background-color: rgb(85, 99, 137);;
+}
+
+nav.navegacion {
+    width: 100%;
+    /* height: 60px; */
+    background-color: rgb(255, 0, 0)240, 240;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+
+.navegacion_nav {
+    
+background-color: rgba(214, 24, 21, 0);
+list-style: none;
+width: 80%;
+display: flex;
+}
+
+.nav__item {
+    background-color: rgba(178, 68, 68, 0);
+}
+
+.navegacion_nav, .nav__item {
+    margin-left: 10px;
+    padding: auto;
+    margin: auto;
+    
+}
+
+.navegacion .contlogo {
+   
+    background-color: rgb(85, 99, 137);
+    width: 40%;
+    padding: auto;
+}
+
+.letradelogo {
+    font-size: 30px;
+    
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: black;
+}
+
+/* menu mobile */
+#check_menu, .navegacion label{
+    display: none;
+
+}
+/* header */
+
+ .caja1, .caja2 .conteiner_secundario {
+position: relative;
+}
+
+.contenedorprin {
+    width: 70%;
+}
+
+.conteinerdeimagen_principal, .header__container{
+   position: relative;
+   top: 0;
+   width: 100%;
+   height: 30%;
+
+}
+
+.header__container video{
+    width: 100%;
+    height: 100%;
+}
+
+.header__container .capa {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilos para cada producto */
+.product {
+    position: relative;
+    text-align: center;
+max-width: 400px;
+height: auto;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ventas_conteiner {
+    background-color: rgb(68, 131, 68);
+    max-width: 100%;
+    margin: 30px;
+    
+}
+
+.text_ventas a{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.titulo_ventas {
+    text-align: center;
+    background-color: rgb(146, 146, 189);
+}
+
+/* .imagen_principal {
+    width 100%;
+    max-height: 200px;
+} */
+
+.imagen_principal {
+    width 100%;
+    max-height: 200px;
+}
+
+.footer {
+    background-color: rgb(71, 71, 118);
+    height: 40px;
+    margin-top: auto;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+
+.info_de_footer a {
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+
+.imagen-principal {
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+
+}
+
+.text_conteiner p{
+    margin-left: 20px;
+}
+
+.formulario {
+    background-color: chocolate;
+    max-width: 70%;
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 40px;
+    
+}
+
+/* media queris */
+
+@media (max-width: 800px) {
+    .navegacion_nav {
+        /* width: 70%; */
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion_nav {
+        display: none;
+    }
+    .navegacion label {
+        font-size: 30px; 
+        position: absolute;
+        margin-left: 95%;
+    }
+
+    #check_menu:checked~ .navegacion_nav {
+        width: 100%;
+        background-color: rgba(85, 99, 137, 0.342);
+        height: 100wh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+
+}
