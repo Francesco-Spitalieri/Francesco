@@ -203,12 +203,15 @@ height: auto;
     max-height: 200px;
 }
 
+
+/* barra de abajo */
 .footer {
     background-color: rgb(71, 71, 118);
     height: 40px;
     margin-top: auto;
     flex-direction: column;
     min-height: 100px;
+    margin-bottom: 30px;
 }
 
 
@@ -222,8 +225,13 @@ height: auto;
     
 }
 
-.imagen-principal {
-    max-width: 100%; 
+/* a */
+.conteiner_imagprincipal {
+    max-width: 90%; 
+    margin-left: 5%;
+}
+
+.imagen_principal {
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
 
